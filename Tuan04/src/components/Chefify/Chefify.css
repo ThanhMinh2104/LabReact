@@ -1,0 +1,293 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "Header"
+    "Content"
+    "Footer";
+  grid-template-columns: 2fr;
+  grid-template-rows: 1fr 15fr 4fr;
+  grid-gap: 0;
+  width: 1440px;
+  height: 953px;
+}
+
+.header {
+  background-color: white;
+  grid-area: Header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #cfcdc8;
+  padding: 10px 30px;
+}
+
+.header-search {
+  display: flex;
+  flex: 4;
+}
+
+.header-search input {
+  background-color: #F3F4F6;
+  border-radius: 15px;
+  border: 0;
+  margin-left: 20px;
+  width: 100%;
+  padding-left: 20px;
+}
+
+.header-nav {
+  flex: 4;
+  justify-content: space-around;
+  display: flex;
+}
+
+.header-nav a {
+  color: #565E6C;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.header-actions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 2;
+}
+
+.header-actions button {
+  color: #F44B87;
+  background-color: #FEF0F5;
+  border: 0;
+  padding: 10px 20px;
+}
+
+.content {
+  gap: 30px;
+  padding: 30px 100px;
+  grid-area: Content;
+  border-right: 3px solid #cfcdc8;
+  border-left: 3px solid #cfcdc8;
+  display: flex;
+  flex-direction: column;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb p {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.breadcrumb .home {
+  color: black;
+}
+
+.breadcrumb .recipe-box {
+  color: #F44B87;
+}
+
+.breadcrumb .separator {
+  margin-inline: 10px;
+}
+
+.profile {
+  margin-top: 20px;
+}
+
+.profile-title {
+  color: black;
+  text-align: start;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.profile-content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+}
+
+.profile-details p {
+  color: #424955;
+  text-align: start;
+  font-size: 18px;
+}
+
+.profile-actions {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.profile-actions p {
+  color: #F44B87;
+}
+
+.profile-actions button {
+  background-color: #F44B87;
+  padding: 10px;
+  color: white;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  border: 0;
+}
+
+.table-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-bar {
+  display: flex;
+  width: 100%;
+  border-bottom: 3px solid #cfcdc8;
+}
+
+.tab-bar button {
+  border-radius: 20px 20px 0 0;
+  font-weight: bolder;
+  padding: 15px;
+  border: 0;
+}
+
+.tab-bar .saved-recipes {
+  background-color: #FBC8DA;
+  color: #F44B87;
+}
+
+.tab-bar .folders,
+.tab-bar .recipes-by-genevene {
+  background-color: white;
+  color: #424955;
+}
+
+.recipe-list {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer {
+  background-color: black;
+  grid-area: Footer;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.footer-about {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.footer-about-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: start;
+}
+
+.footer-about-content p {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.footer-about-content .description {
+  color: white;
+  text-align: start;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.footer-email {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.footer-email input {
+  flex: 1;
+  border: 0;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.footer-email button {
+  border: 0;
+  border-radius: 10px;
+  background-color: #F44B87;
+  color: white;
+  padding: 10px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-bottom p,
+.footer-bottom a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links,
+.footer-recipes {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-links div,
+.footer-recipes {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 25px;
+}
+
+.footer-links p,
+.footer-recipes p {
+  margin: 0;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer-links a,
+.footer-recipes a {
+  color: white;
+  text-decoration: none;
+}

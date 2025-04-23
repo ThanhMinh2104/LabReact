@@ -1,0 +1,305 @@
+.container {
+    display: grid;
+    grid-template-areas:
+      "Header Header"
+      "Menu Content"
+      "Footer Footer";
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 1fr 15fr 4fr;
+    grid-gap: 0;
+    width: 1440px;
+    height: 953px;
+  }
+  
+  .header {
+    background-color: white;
+    grid-area: Header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid gray;
+    padding: 10px 30px;
+  }
+  
+  .header-search {
+    display: flex;
+    flex: 4;
+  }
+  
+  .header-search img {
+    /* Assuming the chefify logo needs specific styling */
+  }
+  
+  .header-search input {
+    background-color: #F3F4F6;
+    border-radius: 15px;
+    border: 0;
+    margin-left: 20px;
+    width: 100%;
+    padding-left: 20px;
+  }
+  
+  .header-nav {
+    flex: 4;
+    justify-content: space-around;
+    display: flex;
+  }
+  
+  .header-nav a {
+    color: #565E6C;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  
+  .header-actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 2;
+  }
+  
+  .header-actions button {
+    color: #F44B87;
+    background-color: #FEF0F5;
+    border: 0;
+    padding: 10px 20px;
+  }
+  
+  .menu {
+    grid-area: Menu;
+    padding: 20px 0;
+    display: flex;
+    justify-content: end;
+    border-left: 3px solid gray;
+  }
+  
+  .menu-filter {
+    border: 1px solid;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+  }
+  
+  .menu-filter-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-filter-header p {
+    text-align: start;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .menu-filter-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu-filter-section p {
+    text-align: start;
+    font-weight: bold;
+  }
+  
+  .checkbox-group {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .checkbox-group div {
+    flex: 1;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+  
+  .checkbox-group input {
+    width: 15px;
+    height: 15px;
+  }
+  
+  .divider {
+    border: 1px solid;
+    margin: 0 -30px;
+    border-bottom: 0;
+  }
+  
+  .time-selection {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .rating-selection {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .rating-selection input {
+    width: 15px;
+    height: 15px;
+  }
+  
+  .apply-button {
+    display: flex;
+    justify-content: center;
+    margin: 10px -30px 0;
+    padding: 20px 0;
+  }
+  
+  .apply-button button {
+    background-color: #F44B87;
+    color: white;
+    border: 0;
+    padding: 10px 20px;
+    width: 80%;
+  }
+  
+  .content {
+    grid-area: Content;
+    border-right: 3px solid gray;
+    text-align: center;
+  }
+  
+  .content p {
+    font-weight: bolder;
+    font-size: 22px;
+  }
+  
+  .content-suggestions {
+    font-weight: bold;
+  }
+  
+  .content-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .content-buttons button {
+    border: 0;
+    border-radius: 20px;
+    padding: 10px 20px;
+  }
+  
+  .content-buttons .sweet-cake {
+    background-color: #FEF0F5;
+  }
+  
+  .content-buttons .black-cake {
+    background-color: #F5F0FE;
+  }
+  
+  .content-buttons .pozole-verder {
+    background-color: #FEF0F5;
+  }
+  
+  .content-buttons .healthy-food {
+    background-color: #EEFCFF;
+  }
+  
+  .footer {
+    background-color: black;
+    grid-area: Footer;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .footer-about {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+  }
+  
+  .footer-about-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  .footer-about-content p {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .footer-about-content p.description {
+    color: white;
+    text-align: start;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .footer-email {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .footer-email input {
+    flex: 1;
+    border: 0;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+  }
+  
+  .footer-email button {
+    border: 0;
+    border-radius: 10px;
+    background-color: #F44B87;
+    color: white;
+    padding: 10px;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .footer-bottom p, .footer-bottom a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-links, .footer-recipes {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .footer-links div, .footer-recipes {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 25px;
+  }
+  
+  .footer-links p, .footer-recipes p {
+    margin: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .footer-links a, .footer-recipes a {
+    color: white;
+    text-decoration: none;
+  }
